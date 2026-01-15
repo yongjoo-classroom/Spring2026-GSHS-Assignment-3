@@ -40,9 +40,9 @@ def implement_xor() -> nn.Module:
 
     # Define a 2 layer MLP model for XOR
     # Implement your code here
-    input_dim = 
-    hidden_dim = 
-    output_dim = 
+    input_dim = 2
+    hidden_dim = 2
+    output_dim = 1
 
     model = nn.Sequential(
         nn.Linear(input_dim, hidden_dim),
@@ -66,7 +66,7 @@ def implement_xor() -> nn.Module:
 
         # Make predictions 
         # Implement your code here
-        predictions = 
+        predictions = model(X)
 
         # calculate the loss
         loss = criterion(predictions, Y)
