@@ -12,7 +12,6 @@ def set_seed(seed=42):
 def get_input_tensors() -> tuple:
     x = np.array([[0, 0], [0, 1], [1, 0], [1, 1]])
     y = np.array([[0], [1], [1], [0]])
-
     x_tensor = torch.tensor(x, dtype=torch.float32)
     y_tensor = torch.tensor(y, dtype=torch.float32)
 
