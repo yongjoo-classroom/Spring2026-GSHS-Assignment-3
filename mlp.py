@@ -62,6 +62,7 @@ def implement_xor() -> nn.Module:
     # optimizer = optim.SGD(model.parameters(), lr=0.1)
 
     # Train the model
+    model.train()
     for _ in range(epochs):
         # Zero the gradients
         optimizer.zero_grad()
